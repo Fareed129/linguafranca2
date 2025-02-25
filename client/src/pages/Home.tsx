@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { TypeAnimation } from 'react-type-animation';
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useEffect } from "react";
@@ -22,26 +21,8 @@ export default function Home() {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              <span className="block mb-2">Unlock Your IT Career With</span>
+              Unlock Your IT Career With <br />
               <span className="text-primary">Lingua Franca</span>
-              <div className="text-2xl md:text-3xl mt-4 h-12 text-primary/80">
-                <TypeAnimation
-                  sequence={[
-                    'Best Computer Coaching in Haldwani',
-                    2000,
-                    'Top Computer Training Institute in Uttarakhand',
-                    2000,
-                    'Learn Computer Skills from Experts',
-                    2000,
-                    'Best IT Courses in Haldwani',
-                    2000,
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  repeat={Infinity}
-                  className="font-medium"
-                />
-              </div>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Comprehensive IT training and language courses in Haldwani. Transform your skills with industry-relevant education.
