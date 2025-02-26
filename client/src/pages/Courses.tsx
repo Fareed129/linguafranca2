@@ -4,55 +4,76 @@ import { setPageMeta } from "@/lib/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import cabaImage from './images/CABA-MDTP.jpg';
+import pythonImage from './images/python.jpg';
+import webImage from './images/web.jpg';
+import typingImage from './images/typing.jpg';
+import pcImage from './images/pc.jpg';
+import officeImage from './images/office.jpg';
+import excelImage from './images/excel.png';
+import accessImage from './images/access.jpg';
+import tallyImage from './images/tally.jpg';
+import basicImage from './images/basic.jpg';
 
 const courses = [
   {
     title: "CABA-MDTP",
-    description: "Comprehensive computer applications and multimedia development training program covering essential IT skills.",
-    duration: "6 months",
+    description: "Enroll in the CABA-MDTP course at LINGUA FRANCA and master computer applications, business accounting, and multilingual DTP. This NIELIT-certified program covers IT fundamentals, programming, office tools, graphic design, and more for a successful tech career.",
+    duration: "12 months",
     image: cabaImage
   },
   {
     title: "Programming in Python",
     description: "Learn Python programming from basics to advanced concepts with practical projects.",
     duration: "3 months",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8"
+    image: pythonImage
   },
   {
     title: "Web Development",
     description: "Master HTML, CSS, JavaScript and modern web development frameworks.",
-    duration: "4 months",
-    image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70"
+    duration: "6 months",
+    image: webImage
   },
   {
     title: "Hindi & English Typing",
     description: "Professional typing course for both Hindi and English languages.",
     duration: "2 months",
-    image: "https://images.unsplash.com/photo-1596496181848-3091d4878b24"
+    image: typingImage
+  },
+  {
+    title: "Computer Basics",
+    description: "Learn Computer Basics at LINGUA FRANCA and build a strong foundation in essential skills like operating systems, file management, internet usage, and basic software applications. Perfect for beginners to start their digital journey with confidence!",
+    duration: "3 months",
+    image: basicImage
   },
   {
     title: "Photoshop & Corel Draw",
     description: "Learn professional graphic design tools and techniques.",
     duration: "3 months",
-    image: "https://images.unsplash.com/photo-1468912637438-582f3f543cba"
+    image: pcImage
+  },
+  {
+    title: "Accounting in Tally Prime + GST + Payroll",
+    description: "Learn Accounting with Tally Prime at LINGUA FRANCA and master GST, invoicing, and financial management. Our course also covers Payroll for salary processing, tax deductions, and employee records management.",
+    duration: "3 months",
+    image: tallyImage
   },
   {
     title: "Complete MS Office",
     description: "Comprehensive training in Microsoft Office applications including Word, Excel, PowerPoint and Access.",
-    duration: "2 months",
-    image: "https://images.unsplash.com/photo-1502207252192-3e376a5b50bf"
+    duration: "3 months",
+    image: officeImage
   },
   {
     title: "Advanced Excel",
     description: "Master advanced Excel features including macros, VBA, and data analysis.",
-    duration: "1 month",
-    image: "https://images.unsplash.com/photo-1552793494-111afe03d0ca"
+    duration: "2 month",
+    image: excelImage
   },
   {
     title: "Database Management",
     description: "Learn database concepts and practical implementation using MS Access.",
     duration: "2 months",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+    image: accessImage
   }
 ];
 
