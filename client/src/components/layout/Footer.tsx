@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h2 className="text-2xl font-bold text-primary mb-4">LINGUA FRANCA</h2>
             <p className="text-gray-600 max-w-md">
-              Empowering students with quality IT education and language skills in Haldwani, Uttarakhand.
+              Empowering students with quality IT education and language skills in Haldwani, Uttarakhand since 1998.
             </p>
           </div>
 
@@ -28,10 +28,10 @@ export default function Footer() {
               Connect With Us
             </h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary">
+              <a href="https://www.facebook.com/share/15E8EKtqxM/" className="text-gray-400 hover:text-primary">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary">
+              <a href="https://www.instagram.com/lingua_franca.ed?igsh=bm4zdjNpejc1M2t3" className="text-gray-400 hover:text-primary">
                 <Instagram className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-primary">
@@ -46,7 +46,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} LINGUA FRANCA SCHOOL OF IT AND LANGUAGES. All rights reserved.
           </p>
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} design by mo fareed
+            Designed and Developed by <a href="https://www.linkedin.com/in/mo-fareed-524a72267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Mo. Fareed</a>
           </p>
         </div>
       </div>

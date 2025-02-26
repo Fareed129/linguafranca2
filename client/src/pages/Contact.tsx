@@ -140,7 +140,7 @@ export default function Contact() {
                     <h3 className="font-semibold text-lg mb-2">Visit Us</h3>
                     <p className="text-gray-600">
                       Lingua Franca School of IT and Languages<br />
-                      Near City Heart Hospital<br />
+                      opp. Bank of Baroda ATM, Kunwarpur Choraha, <br />
                       Haldwani, Uttarakhand 263139
                     </p>
                   </div>
@@ -153,7 +153,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Call Us</h3>
                     <p className="text-gray-600">
-                      +91 XXXXX XXXXX<br />
+                      +91 84455 38849<br />
                       Mon - Sat: 9:00 AM - 6:00 PM
                     </p>
                   </div>
@@ -166,8 +166,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Email Us</h3>
                     <p className="text-gray-600">
-                      info@linguafranca.edu.in<br />
-                      admissions@linguafranca.edu.in
+                      office4lf@gmail.com<br />
+              
                     </p>
                   </div>
                 </CardContent>
@@ -179,7 +179,7 @@ export default function Contact() {
               <CardContent className="p-6">
                 <div className="aspect-w-16 aspect-h-9">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27858.95323959293!2d79.50344!3d29.22242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a098af954dc531%3A0x7b11b22458f71e48!2sHaldwani%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1648236354245!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.855319295515!2d79.56440219999999!3d29.198386199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a091cf608d69ad%3A0xcee6dc67b5de3de5!2sLINGUA%20FRANCA%20SCHOOL%20OF%20IT%20AND%20LANGUAGES!5e0!3m2!1sen!2sin!4v1740536965020!5m2!1sen!2sin"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
