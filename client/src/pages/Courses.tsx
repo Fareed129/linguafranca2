@@ -3,13 +3,14 @@ import { useEffect } from "react";
 import { setPageMeta } from "@/lib/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import cabaImage from './images/CABA-MDTP.jpg';
 
 const courses = [
   {
     title: "CABA-MDTP",
     description: "Comprehensive computer applications and multimedia development training program covering essential IT skills.",
     duration: "6 months",
-    image: "/images/CABA-MDTP.jpg"
+    image: cabaImage
   },
   {
     title: "Programming in Python",
