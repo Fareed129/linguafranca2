@@ -213,7 +213,10 @@ export default function Courses() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold">{course.title}</h3>
+                  <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Get Certification</span>
+                </div>
                 <p className="text-gray-600 mb-4">{course.description}</p>
                 <Accordion type="single" collapsible className="w-full mb-4">
                   <AccordionItem value="syllabus">
