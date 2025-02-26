@@ -134,7 +134,12 @@ export default function Home() {
               >
                 <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
-                <p className="text-sm text-gray-500">Duration: {course.duration}</p>
+                <p className="text-sm text-gray-500 mb-4">Duration: {course.duration}</p>
+                <Link href="/admissions">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-500 hover:from-amber-500 hover:via-orange-600 hover:to-yellow-600 text-white">
+                    Enroll Now
+                  </Button>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -145,7 +150,13 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8">Student Testimonials</h2>
-          <div className="flex gap-6 overflow-x-auto pb-4">
+          <motion.div 
+            className="flex gap-6 overflow-x-auto pb-4"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+            viewport={{ once: true, margin: "-100px" }}
+          >
             {[
               {
                 name: "Rahul Singh",
@@ -172,10 +183,15 @@ export default function Home() {
               >
                 <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
                 <p className="font-semibold">{testimonial.name}</p>
-                <p className="text-sm text-gray-500">{testimonial.course}</p>
+                <p className="text-sm text-gray-500 mb-4">{testimonial.course}</p>
+                <Link href="/testimonials">
+                  <Button variant="outline" size="sm" className="w-full">
+                    Read More
+                  </Button>
+                </Link>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
