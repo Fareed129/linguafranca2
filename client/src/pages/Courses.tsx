@@ -3,6 +3,12 @@ import { useEffect } from "react";
 import { setPageMeta } from "@/lib/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import cabaImage from './images/CABA-MDTP.jpg';
 import pythonImage from './images/python.jpg';
 import webImage from './images/web.jpg';
@@ -19,19 +25,49 @@ const courses = [
     title: "CABA-MDTP",
     description: "Enroll in the CABA-MDTP course at LINGUA FRANCA and master computer applications, business accounting, and multilingual DTP. This NIELIT-certified program covers IT fundamentals, programming, office tools, graphic design, and more for a successful tech career.",
     duration: "12 months",
-    image: cabaImage
+    image: cabaImage,
+    syllabus: `Computer Fundamentals
+Windows Operating System
+Typing (Hindi & English)
+MS Office (Word, Excel, PowerPoint)
+Internet & Email
+Tally Prime with GST
+Photoshop
+CorelDraw
+PageMaker
+Web Development Basics`
   },
   {
     title: "Programming in Python",
     description: "Learn Python programming from basics to advanced concepts with practical projects.",
     duration: "3 months",
-    image: pythonImage
+    image: pythonImage,
+    syllabus: `Python Basics
+Variables and Data Types
+Control Flow
+Functions and Modules
+Object-Oriented Programming
+File Handling
+Error Handling
+Libraries and Frameworks
+Database Integration
+Project Development`
   },
   {
     title: "Web Development",
     description: "Master HTML, CSS, JavaScript and modern web development frameworks.",
     duration: "6 months",
-    image: webImage
+    image: webImage,
+    syllabus: `HTML5 Fundamentals
+CSS3 and Styling
+JavaScript Basics
+DOM Manipulation
+Responsive Design
+Frontend Frameworks
+Backend Development
+Database Integration
+Web Security
+Deployment`
   },
   {
     title: "Hindi & English Typing",
@@ -113,6 +149,16 @@ export default function Courses() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
+                <Accordion type="single" collapsible className="w-full mb-4">
+                  <AccordionItem value="syllabus">
+                    <AccordionTrigger>View Syllabus</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="whitespace-pre-line text-gray-600">
+                        {course.syllabus}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-500">Duration: {course.duration}</span>
                   <Link href="/admissions">
