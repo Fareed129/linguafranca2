@@ -13,8 +13,8 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section with Gradient Background */}
-      <section className="bg-gradient-to-b from-blue-600 to-blue-400 text-white">
+      {/* Hero Section with Enhanced Gradient Background */}
+      <section className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-400 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -22,10 +22,27 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-left max-w-3xl"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="block mb-2">Unlock Your IT Career With</span>
-              <span className="text-white">Lingua Franca</span>
-              <div className="text-2xl md:text-3xl mt-4 h-12 text-white/90">
+            <motion.h1 
+              className="text-4xl md:text-6xl font-bold mb-6"
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <motion.span 
+                className="block mb-2 text-blue-100"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                Unlock Your IT Career With
+              </motion.span>
+              <motion.span 
+                className="text-white"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                Lingua Franca
+              </motion.span>
+              <div className="text-2xl md:text-3xl mt-4 h-12 text-blue-100">
                 <TypeAnimation
                   sequence={[
                     'Best Computer Coaching in Haldwani',
@@ -43,31 +60,55 @@ export default function Home() {
                   className="font-medium"
                 />
               </div>
-            </h1>
-            <p className="text-xl text-white/80 mb-8">
+            </motion.h1>
+            <motion.p 
+              className="text-xl text-blue-50 mb-8"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+            >
               Comprehensive IT training and language courses in Haldwani. Transform your skills with industry-relevant education.
-            </p>
-            <div className="flex gap-4">
+            </motion.p>
+            <motion.div 
+              className="flex gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
               <Link href="/admissions">
-                <Button size="lg" variant="secondary" className="text-lg px-8">
-                  Start Learning Today
+                <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-white border-none transform hover:scale-105 transition-transform duration-200">
+                  Enroll Now
                 </Button>
               </Link>
               <Link href="/courses">
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-white text-white hover:bg-white hover:text-blue-600">
+                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-blue-100 text-blue-50 hover:bg-blue-100/10 hover:text-white transform hover:scale-105 transition-transform duration-200">
                   View Courses
                 </Button>
               </Link>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Course Slider Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8">Our Popular Courses</h2>
-          <div className="flex gap-6 overflow-x-auto pb-4">
+          <motion.h2 
+            className="text-3xl font-bold mb-8 text-blue-900"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Our Popular Courses
+          </motion.h2>
+          <motion.div 
+            className="flex gap-6 overflow-x-auto pb-4 scroll-smooth"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             {[
               {
                 title: "CABA-MDTP",
