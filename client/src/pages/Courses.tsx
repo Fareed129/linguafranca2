@@ -19,85 +19,144 @@ import excelImage from './images/excel.png';
 import accessImage from './images/access.jpg';
 import tallyImage from './images/tally.jpg';
 import basicImage from './images/basic.jpg';
+import aiImage from './images/ai.webp';
 
 const courses = [
   {
-    title: "CABA-MDTP",
-    description: "Enroll in the CABA-MDTP course at LINGUA FRANCA and master computer applications, business accounting, and multilingual DTP. This NIELIT-certified program covers IT fundamentals, programming, office tools, graphic design, and more for a successful tech career.",
+    title: "CABA-MDTP by NIELIT",
+    description: "Enroll in Government certified course Computer Application Buisness Accounting & Multilingual-DTP course at LINGUA FRANCA and master computer applications, business accounting, and multilingual DTP. This NIELIT-certified program covers IT fundamentals, programming, office tools, graphic design, and more for a successful tech career.",
     duration: "12 months",
     image: cabaImage,
-    syllabus: `Computer Fundamentals
-Windows Operating System
-Typing (Hindi & English)
-MS Office (Word, Excel, PowerPoint)
-Internet & Email
-Tally Prime with GST
-Photoshop
-CorelDraw
-PageMaker
-Web Development Basics`
+    syllabus: `Module I: Fundamentals of Information Technology
+Module II: Internet Technology and Web Designing.
+Module III: Financial Accounting Using Tally & Personality Development.
+Module IV: Emerging trends in IT
+Module V: Multilingual DTP.
+Module VI: Artificial Intelligence and Machine Learning Python`
   },
   {
     title: "Programming in Python",
     description: "Learn Python programming from basics to advanced concepts with practical projects.",
     duration: "3 months",
     image: pythonImage,
-    syllabus: `Python Basics
-Variables and Data Types
-Control Flow
-Functions and Modules
-Object-Oriented Programming
-File Handling
-Error Handling
-Libraries and Frameworks
-Database Integration
-Project Development`
+    syllabus: `✅ Introduction to Python – Basics, installation, and syntax
+✅ Variables & Data Types – Strings, numbers, lists, dictionaries, operators
+✅ Control Flow – Conditional statements, loops (for, while)
+✅ Functions & Modules – Defining functions, lambda, importing modules
+✅ File Handling – Reading/writing files (txt, csv, json)
+✅ OOP in Python – Classes, objects, inheritance, polymorphism
+✅ Exception Handling – Try-except, error handling
+✅ Libraries & Frameworks – NumPy, Pandas, Matplotlib, Tkinter (GUI)
+✅ Database Management – MySQL connectivity, CRUD operations
+✅ Web Development (Basic) – Flask framework, routes, templates
+✅ Mini Project & Final Assessment – Hands-on project, debugging, testing
+
+This course covers everything from fundamentals to real-world applications! 🚀`
+  },
+  {
+    title: "Working with AI Tools",
+    description: "This course provides hands-on training in using AI-powered tools for automation, productivity, and creativity. Learn to leverage AI for content generation, data analysis, design, coding assistance, and business applications. Topics include AI chatbots, image and video editing tools, speech recognition, and automation software. By the end of the course, you’ll be able to integrate AI tools into daily workflows to enhance efficiency and innovation",
+    duration: "1 months",
+    image: aiImage,
+    syllabus: `✅ Introduction to AI & Machine Learning – Understanding AI concepts, applications, and ethics
+✅ AI-Powered Productivity Tools – AI chatbots, virtual assistants, and automation tools
+✅ AI in Content Creation – Text generation, AI-powered writing assistants, and content optimization
+✅ AI for Image & Video Editing – AI-based photo enhancement, video editing, and design automation
+✅ AI in Data Analysis – AI-driven data insights, visualization, and predictive analytics
+✅ AI for Coding & Development – AI-powered code generation, debugging, and automation tools
+✅ AI in Business & Marketing – AI for SEO, customer engagement, and marketing automation
+✅ Practical Implementation – Hands-on projects and real-world applications`
   },
   {
     title: "Web Development",
     description: "Master HTML, CSS, JavaScript and modern web development frameworks.",
     duration: "6 months",
     image: webImage,
-    syllabus: `HTML5 Fundamentals
-CSS3 and Styling
-JavaScript Basics
-DOM Manipulation
-Responsive Design
-Frontend Frameworks
-Backend Development
-Database Integration
-Web Security
-Deployment`
+    syllabus: `✅ Introduction to Web Development – Basics of front-end & back-end, development tools
+✅ HTML – Structure, elements, forms, tables, media integration
+✅ CSS – Styling, layouts, flexbox, grid, animations, responsiveness
+✅ JavaScript – Variables, functions, DOM manipulation, events, ES6+ features
+✅ Bootstrap (Optional) – Responsive design, components, utilities
+✅ PHP – Syntax, variables, loops, functions, form handling
+✅ MySQL Database – CRUD operations, database connections with PHP
+✅ AJAX & JSON – Asynchronous requests, dynamic content loading
+✅ User Authentication – Login, registration, sessions, security
+✅ Project Development – Full-stack web project with real-world application`
   },
   {
     title: "Hindi & English Typing",
     description: "Professional typing course for both Hindi and English languages.",
     duration: "2 months",
-    image: typingImage
+    image: typingImage,
+    syllabus:`✅ Introduction to Typing – Importance, keyboard layout, and finger positioning
+✅ English Typing – Speed improvement, accuracy, common shortcuts
+✅ Hindi Typing – Using Kruti Dev and Mangal fonts, Unicode typing
+✅ Typing Practice – Paragraphs, dictation, error correction techniques
+✅ Typing Software & Tools – Learning with typing tutor applications
+✅ Speed & Accuracy Tests – Regular assessments for progress tracking
+✅ Government & Competitive Exam Typing Preparation – Meeting official requirements`
   },
   {
     title: "Computer Basics",
     description: "Learn Computer Basics at LINGUA FRANCA and build a strong foundation in essential skills like operating systems, file management, internet usage, and basic software applications. Perfect for beginners to start their digital journey with confidence!",
     duration: "3 months",
-    image: basicImage
+    image: basicImage,
+    syllabus: `✅ Introduction to Computers – Understanding hardware, software, and operating systems
+✅ Windows & File Management – Desktop navigation, file/folder organization, shortcuts
+✅ MS Office Basics – Word (documents), Excel (spreadsheets), PowerPoint (presentations)
+✅ Internet & Email – Browsing, online safety, creating & managing emails
+✅ Basic Troubleshooting – Common issues, security tips, and system maintenance
+✅ Typing Skills – Improving speed and accuracy in English & Hindi
+✅ Practical Applications – Hands-on exercises for daily computer usage`
   },
   {
     title: "Photoshop & Corel Draw",
     description: "Learn professional graphic design tools and techniques.",
     duration: "3 months",
-    image: pcImage
+    image: pcImage,
+    syllabus:`✅ Introduction to Graphic Design – Basics of digital designing, UI/UX concepts
+✅ Adobe Photoshop
+
+Image editing, retouching, and color correction
+Layers, masks, filters, and blending modes
+Creating social media posts, banners, and advertisements
+✅ CorelDRAW
+
+Vector graphics, logo design, and illustrations
+Working with typography, shapes, and layouts
+Designing business cards, brochures, and flyers
+✅ Advanced Techniques – Special effects, mockups, and export settings
+✅ Project-Based Learning – Hands-on practice with real-world design projects
+
+Master the art of creative designing with industry-standard tools! 🚀`
   },
   {
     title: "Accounting in Tally Prime + GST + Payroll",
     description: "Learn Accounting with Tally Prime at LINGUA FRANCA and master GST, invoicing, and financial management. Our course also covers Payroll for salary processing, tax deductions, and employee records management.",
     duration: "3 months",
-    image: tallyImage
+    image: tallyImage,
+    syllabus:`✅ Introduction to Tally Prime – Interface, company creation, and configuration
+✅ Accounting Fundamentals – Ledger, vouchers, and financial statements
+✅ GST (Goods & Services Tax) – GST setup, invoicing, returns, and reports
+✅ Inventory Management – Stock groups, categories, and valuation methods
+✅ Payroll Management – Employee records, salary processing, PF, and ESI calculations
+✅ Banking & Taxation – Cheque printing, reconciliation, TDS, and other tax reports
+✅ Final Accounts & Reporting – Balance sheets, profit & loss statements, and MIS reports
+
+Gain expertise in professional accounting with real-time business applications! 🚀`
   },
   {
     title: "Complete MS Office",
     description: "Comprehensive training in Microsoft Office applications including Word, Excel, PowerPoint and Access.",
     duration: "3 months",
-    image: officeImage
+    image: officeImage,
+    syllabus:`✅ Introduction to MS Office – Overview of Word, Excel, PowerPoint, and Outlook
+✅ MS Word – Document creation, formatting, tables, mail merge, and templates
+✅ MS Excel – Data entry, formulas, functions, charts, pivot tables, and automation
+✅ MS PowerPoint – Slide design, animations, transitions, and professional presentations
+✅ MS Outlook – Email management, calendar scheduling, and contacts organization
+✅ Advanced Features – Collaboration tools, cloud integration, and security settings
+✅ Practical Applications – Hands-on projects for office and business use`
   },
   {
     title: "Advanced Excel",
@@ -109,7 +168,14 @@ Deployment`
     title: "Database Management",
     description: "Learn database concepts and practical implementation using MS Access.",
     duration: "2 months",
-    image: accessImage
+    image: accessImage,
+    syllabus:`✅ Introduction to MS Access – Overview, interface, and database concepts
+✅ Tables & Relationships – Creating tables, defining data types, setting primary keys
+✅ Queries & Data Retrieval – Using Select, Action, and Parameter queries
+✅ Forms & Reports – Designing user-friendly forms and generating reports
+✅ Data Validation & Security – Input masks, validation rules, and user access control
+✅ Macros & Automation – Automating tasks with macros and VBA integration
+✅ Project-Based Learning – Developing real-world applications like inventory or student management systems`
   }
 ];
 
