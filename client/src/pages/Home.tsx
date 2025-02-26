@@ -75,7 +75,7 @@ export default function Home() {
               transition={{ delay: 0.5, duration: 0.8 }}
             >
               <Link href="/admissions">
-                <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-yellow-600 via-yellow-300 to-white hover:from-yellow-700 hover:via-yellow-400 hover:to-white text-gray-800 border-none transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+                <Button size="lg" className="text-lg px-8 bg-yellow-500 hover:bg-yellow-600 text-gray-800 border-none transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
                   Enroll Now
                 </Button>
               </Link>
@@ -136,7 +136,7 @@ export default function Home() {
                 <p className="text-gray-600 mb-4">{course.description}</p>
                 <p className="text-sm text-gray-500 mb-4">Duration: {course.duration}</p>
                 <Link href="/admissions">
-                  <Button size="sm" className="w-full bg-gradient-to-r from-yellow-600 via-yellow-300 to-white hover:from-yellow-700 hover:via-yellow-400 hover:to-white text-gray-800">
+                  <Button size="sm" className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-800">
                     Enroll Now
                   </Button>
                 </Link>
