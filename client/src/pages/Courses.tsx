@@ -9,7 +9,7 @@ const courses = [
     title: "CABA-MDTP",
     description: "Comprehensive computer applications and multimedia development training program covering essential IT skills.",
     duration: "6 months",
-    image: "https://images.unsplash.com/photo-1586144131462-fa2a2b6d070c"
+    image: "/images/nielit image.png"
   },
   {
     title: "Programming in Python",
