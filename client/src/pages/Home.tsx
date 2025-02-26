@@ -75,7 +75,7 @@ export default function Home() {
               transition={{ delay: 0.5, duration: 0.8 }}
             >
               <Link href="/admissions">
-                <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 text-white border-none transform hover:scale-105 transition-transform duration-200">
+                <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-500 hover:from-amber-500 hover:via-orange-600 hover:to-yellow-600 text-white border-none transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
                   Enroll Now
                 </Button>
               </Link>
@@ -103,10 +103,10 @@ export default function Home() {
           </motion.h2>
           <motion.div 
             className="flex gap-6 overflow-x-auto pb-4 scroll-smooth"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+            viewport={{ once: true, margin: "-100px" }}
           >
             {[
               {
