@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { TypeAnimation } from 'react-type-animation';
 import { Button } from "@/components/ui/button";
@@ -138,7 +137,7 @@ export default function Home() {
                 <p className="text-sm text-gray-500">Duration: {course.duration}</p>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
