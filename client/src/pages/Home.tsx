@@ -227,7 +227,18 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{blog.title}</h3>
                   <p className="text-gray-600 mb-4">{blog.excerpt}</p>
-                  <p className="text-sm text-gray-500">{blog.date}</p>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm text-gray-500">{blog.date}</p>
+                    <Link href="/blog">
+                      <Button 
+                        variant="outline"
+                        size="sm"
+                        className="relative overflow-hidden transition-all duration-500 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent hover:shadow-md"
+                      >
+                        Read More →
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
             ))}
